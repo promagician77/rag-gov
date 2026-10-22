@@ -1,0 +1,203 @@
+{
+ "version": "v2",
+ "t1_hard": [
+  {
+   "id": "1.01",
+   "name": "breathing stopped",
+   "pattern": "\\b(not|isn'?t|wasn'?t|stopped|stops|stop|barely|can'?t|cannot|won'?t|no longer|hardly)\\b[^.]{0,20}\\bbreath"
+  },
+  {
+   "id": "1.02",
+   "name": "breathing sounds",
+   "pattern": "\\b(gasping|gurgl\\w+|chok(ing|ed)|snoring weird\\w*)\\b|\\bbreathing\\b[^.]{0,20}\\b(slow|weird|shallow|funny|strange|rattl\\w+)"
+  },
+  {
+   "id": "1.03",
+   "name": "unresponsive",
+   "pattern": "\\b(unresponsive|unconscious|non-?responsive|passed out|not responding|stopped responding|not waking|not moving|(won'?t|wont|can'?t|cant) (wake|respond|stay awake))\\b"
+  },
+  {
+   "id": "1.04",
+   "name": "nodding off",
+   "pattern": "\\bnodd?(ed|ing) (off|out)\\b|\\bfalling asleep (mid|in the middle)\\b|\\bcan'?t (get|keep) (him|her|them) (awake|to wake)"
+  },
+  {
+   "id": "1.05",
+   "name": "colour change",
+   "pattern": "\\b(blue|purple|gr[ae]y|pale)\\b[^.]{0,12}\\b(lips|face|skin|fingers|nails)\\b|\\b(lips|face|skin)\\b[^.]{0,12}\\b(blue|purple|gr[ae]y)\\b|\\b(turning|still|going) (blue|purple)\\b|\\bcold and not\\b"
+  },
+  {
+   "id": "1.06",
+   "name": "took too much",
+   "pattern": "\\btoo many pills\\b|\\btook (too (many|much)|(a|the) (whole|bunch|handful|lot)|(\\d+|eight|ten|twenty) (pills|klonopin|xanax)|a lot of)\\b|\\bswallowed (a )?(bunch|handful|lot|whole|all)\\b|\\b(whole|entire) bottle\\b|\\bhandful of (pills|meds)\\b|\\bpills (saved|stockpiled|stashed)\\b|\\bsaved up\\b[^.]{0,20}\\bpills\\b"
+  },
+  {
+   "id": "1.07",
+   "name": "naloxone used",
+   "pattern": "\\b(gave|used|administered|sprayed|gave him|gave her)\\b[^.]{0,20}\\b(narcan|naloxone)\\b"
+  },
+  {
+   "id": "1.08",
+   "name": "emergency words",
+   "pattern": "\\b911\\b|\\bambulance\\b|\\bparamedic\\w*|\\bemergency room\\b"
+  },
+  {
+   "id": "1.09",
+   "name": "cardiac/respiratory",
+   "pattern": "\\bchest (pain|hurts|tight\\w*)\\b|\\bcan'?t (catch|get) (his|her|their)? ?breath\\b|\\bshort of breath\\b|\\bheart (racing|pounding)\\b"
+  },
+  {
+   "id": "1.10",
+   "name": "delirium now",
+   "pattern": "\\b(he|she|they)('s| is| are)\\b[^.]{0,30}\\b(seeing things|hallucinat\\w+|confused and)\\b|\\bdelirium\\b|\\bshaking badly\\b|\\bshaking all over\\b|\\bjump(ed|ing)? (out|off|from)\\b"
+  },
+  {
+   "id": "1.11",
+   "name": "suicide",
+   "pattern": "\\bsuicid\\w*|\\bkill(ing)? (my ?self|him ?self|her ?self|them ?selves|me)\\b|\\b(end|ending) (it all|my life|his life|her life|their life)\\b|\\b(want|wants|wanted|wanting|wanna) to (die|end it)\\b|\\bdon'?t (want|wanna) to (be here|live|go on|exist)\\b|\\bdoesn'?t want to (be here|live|go on|exist)\\b|\\bbetter off (dead|without me)\\b|\\brather be dead\\b|\\bno reason to live\\b|\\bplan to end\\b|\\bdie slowly\\b"
+  },
+  {
+   "id": "1.12",
+   "name": "can't go on",
+   "pattern": "\\bcan'?t (do|take|go on|handle) (this|it) (any ?more|anymore)\\b|\\bjust want it to stop\\b|\\bgive up on (life|living)\\b"
+  },
+  {
+   "id": "1.13",
+   "name": "self-harm",
+   "pattern": "\\bself ?-?harm\\w*|\\bcutting (my ?self|her ?self|him ?self|again)\\b|\\bhurt (my ?self|him ?self|her ?self|them ?selves)\\b|\\bdoesn'?t care if (she|he|they) lives?\\b|\\bcutting\\b[^.]{0,15}\\bsays\\b"
+  },
+  {
+   "id": "1.14",
+   "name": "goodbye",
+   "pattern": "\\bgoodbye\\b[^.]{0,20}\\b(note|message|text|letter|post)\\b|\\b(texted|said|wrote|left|sent)\\b[^.]{0,15}\\bgoodbye\\b"
+  },
+  {
+   "id": "1.15",
+   "name": "violence",
+   "pattern": "\\b(hit|hurt|threaten\\w*|chok\\w+|beat|punch\\w*|attack\\w*|strangl\\w*)\\b[^.]{0,20}\\b(me|us|the kids|my kids|children|my (mom|mother|wife|husband|child|baby))\\b|\\b(has|got|with) a (gun|knife|weapon)\\b|\\bafraid for my (life|safety)\\b|\\b(scared|afraid) to go home\\b"
+  },
+  {
+   "id": "1.16",
+   "name": "child exposure",
+   "pattern": "\\b(toddler|baby|infant|child|kid|kids|little (one|girl|boy))\\b[^.]{0,40}\\b(ate|eat|swallowed|chewing|got into|drank|licked)\\b"
+  }
+ ],
+ "t1_soft": [
+  {
+   "id": "1s.01",
+   "name": "overdose",
+   "pattern": "\\bod'?d\\b|\\bod(ed|ing)\\b|\\boverdos\\w*|\\bover dos\\w*"
+  },
+  {
+   "id": "1s.02",
+   "name": "seizure",
+   "pattern": "\\bseiz(ure|ures|ing)\\b|\\bconvuls\\w+|\\bfoaming\\b"
+  }
+ ],
+ "question_start": "^(can|could|does|do|did|what|how|why|is|are|will|would|should)\\b",
+ "urgent_cue": "\\b(now|right now|just|tonight|currently|help|please|hurry|emergency|he'?s|she'?s|they'?re|i think|my \\w+ (is|just|was)|had a)\\b|!",
+ "refuse": [
+  {
+   "id": "4r.01",
+   "name": "hack or spy",
+   "pattern": "\\bhack\\w*|\\bspy on\\b|\\bwithout (him|her|them) knowing\\b"
+  },
+  {
+   "id": "4r.02",
+   "name": "prompt attack",
+   "pattern": "\\bignore (all |your |previous )*instructions\\b|\\bsystem prompt\\b"
+  }
+ ],
+ "illicit": [
+  {
+   "id": "4i.01",
+   "name": "buy",
+   "pattern": "\\b(where|how)\\b[^.]{0,30}\\b(buy|get|order|score|find)\\b[^.]{0,30}\\b(fentanyl|xanax|adderall|oxy\\w*|percocet|heroin|meth|cocaine|crack|pills|drugs|weed|molly|lsd|ketamine)\\b"
+  },
+  {
+   "id": "4i.02",
+   "name": "buy2",
+   "pattern": "\\bcan i (buy|order|get)\\b[^.]{0,30}\\b(online|without a prescription|no prescription)\\b"
+  },
+  {
+   "id": "4i.03",
+   "name": "make",
+   "pattern": "\\bhow (do i|to|can i)\\b[^.]{0,20}\\bmake\\b[^.]{0,20}\\b(meth|bong|pipe|crack|drugs|lsd|cocaine)\\b"
+  },
+  {
+   "id": "4i.04",
+   "name": "sell",
+   "pattern": "\\b(sell|selling)\\b[^.]{0,30}\\b(weed|oxy\\w*|pills|drugs|xanax|adderall|fentanyl|heroin|meth|coke)\\b|\\b(weed|oxy\\w*|pills|drugs|xanax|adderall|fentanyl|heroin|meth|coke)\\b[^.]{0,30}\\bto sell\\b"
+  },
+  {
+   "id": "4i.05",
+   "name": "hide",
+   "pattern": "\\bhide\\b[^.]{0,20}\\b(pills|drugs|weed|it)\\b[^.]{0,20}\\b(from the police|from police|from cops)\\b"
+  }
+ ],
+ "family_word": "\\b(son|daughter|husband|wife|brother|sister|mom|mother|dad|father|friend|boyfriend|girlfriend|partner|spouse|child|children|kid|kids|teen\\w*|loved one|family|parent\\w*|sibling\\w*|him|his|her|he|she|they|them)\\b",
+ "t2": [
+  {
+   "id": "2.01",
+   "name": "medication names",
+   "pattern": "\\b(naloxone|narcan|suboxone|subutex|buprenorphine|methadone|vivitrol|naltrexone|antabuse|disulfiram|campral|acamprosate|xanax|alprazolam|klonopin|clonazepam|valium|diazepam|ativan|lorazepam|benzo\\w*|gabapentin|neurontin|lyrica|tramadol|oxy\\w*|percocet|vicodin|hydrocodone|adderall|ritalin|opioid\\w*|fentanyl|heroin|morphine|codeine|kratom|tylenol|acetaminophen|benadryl|trazodone|seroquel|sleeping (pill|med)\\w*|prescri\\w+|medication\\w*|meds)\\b"
+  },
+  {
+   "id": "2.02",
+   "name": "dosing",
+   "pattern": "\\b\\d+ ?(mg|milligrams?|ml|mcg)\\b|\\bdos(e|es|ing|age)\\b|\\b(max|maximum) dose\\b"
+  },
+  {
+   "id": "2.03",
+   "name": "withdrawal and tapering",
+   "pattern": "\\bwithdraw\\w*|\\bdetox\\w*|\\btaper\\w*|\\bcold turkey\\b|\\ball at once\\b|\\bquit(ting)? (drinking|using)\\b|\\bcut(ting)? (back|down)\\b|\\b(stop|stopping|stopped)\\b[^.]{0,25}\\b(suddenly|abruptly|on (his|her|their) own)\\b|\\b(shakes|sweats|tremors)\\b|\\bsafe (way )?to (stop|quit|cut)\\b"
+  },
+  {
+   "id": "2.04",
+   "name": "mixing",
+   "pattern": "\\bmix(ing|ed)?\\b|\\bcombin\\w+|\\bwith alcohol\\b|\\bwhile drinking\\b|\\binteract\\w*"
+  },
+  {
+   "id": "2.05",
+   "name": "legal and coercion",
+   "pattern": "\\bmarchman\\b|\\bbaker act\\b|\\binvoluntar\\w+|\\bcommit(ment|ted|ting)?\\b|\\bforce (him|her|them|my \\w+) (into|to go)\\b|\\bcourt[- ]ordered\\b|\\bcustody\\b|\\bpolice\\b|\\barrest\\w*|\\bjail\\b|\\bcops?\\b|\\blegal\\b|\\bhave to report\\b|\\bmandatory report\\w*"
+  },
+  {
+   "id": "2.06",
+   "name": "treatment suitability",
+   "pattern": "\\b(inpatient|outpatient|residential|rehab)\\b[^.]{0,30}\\b(better|best|which|work|worth|right)\\b|\\bwhich (is|are) better\\b|\\bbest rehab\\b|\\bdoes [a-z ]{0,20}\\bwork\\b"
+  },
+  {
+   "id": "2.07",
+   "name": "medical risk cues",
+   "pattern": "\\bis (it|that) (safe|ok|okay|dangerous)\\b|\\bsafe (to|for)\\b|\\bdangerous\\b|\\bside effects?\\b|\\bcan (a person|you|he|she|someone|people) (die|overdose)\\b|\\bpregnan\\w*|\\bdrug test\\w*|\\btest(ed)? positive\\b|\\blaced\\b|\\bfake pills?\\b|\\bcounterfeit\\b|\\bfentanyl strips?\\b|\\bhallucinat\\w+|\\bpsychosis\\b|\\bparanoi\\w+"
+  },
+  {
+   "id": "2.08",
+   "name": "clinicians",
+   "pattern": "\\b(doctor|physician|psychiatrist|nurse|hospital|anesthesia)\\b"
+  }
+ ],
+ "topic": [
+  {
+   "id": "3.01",
+   "name": "substance and recovery words",
+   "pattern": "\\b(addict\\w*|alcohol\\w*|drink\\w*|drank|drunk|sober\\w*|recover\\w*|relaps\\w*|rehab\\w*|treatment|substance|drug\\w*|using|use disorder|enabl\\w*|codepend\\w*|al-?anon|nar-?anon|aa|smart recovery|intervention|boundar\\w*|craft|stigma|harm reduction|support group|counsel\\w*|therap\\w*|vap\\w*|weed|marijuana|cannabis|pills?|high)\\b"
+  },
+  {
+   "id": "3.02",
+   "name": "family and feelings",
+   "pattern": "\\b(son|daughter|husband|wife|brother|sister|mom|mother|dad|father|friend|boyfriend|girlfriend|partner|spouse|child|children|kid|kids|teen\\w*|loved one|family|parent\\w*|sibling\\w*|grandson|granddaughter|niece|nephew)\\b|\\b(struggling|worried|worry|scared|afraid|exhausted|guilty|ashamed|angry|lonely|overwhelmed|hopeless)\\b"
+  },
+  {
+   "id": "3.03",
+   "name": "people and care words",
+   "pattern": "\\b(he|she|him|her|his|they|them|myself|fault|selfish|lie|lies|lying|hurting|get better|disorder|disease|management|stages of change|cope|coping)\\b"
+  },
+  {
+   "id": "3.04",
+   "name": "asking for help",
+   "pattern": "\\b(where to start|don'?t know what to do|dont know (where|what)|what (should|can|do) i do|need help|please help)\\b"
+  }
+ ]
+}
